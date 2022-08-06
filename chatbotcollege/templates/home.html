@@ -1,0 +1,164 @@
+
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>WELCOME TO FIRST AID BUDDY</h2>
+
+
+<div class="bg-dark p-2 text-dark bg-opacity-100">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/First AID BUDDY.png" class="d-block w-100 h-900" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/Firstaidbuddy (3).png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="bg-success p-2 text-light bg-opacity-100">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h5>Start Chat by clicking on the given button.</h5>
+      <h5>खालील दिलेल्या बटण वर क्लिक करा संवाद सुरु करण्यास .</h5>
+      <a href="{{ url_for('fdisform') }}" class="btn btn-warning ">Start Chat / संवाद साधण्यास सुरवात करा </a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="bg-dark p-2 text-dark bg-opacity-25">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card" ">
+      <div class="bg-danger p-2 text-dark bg-opacity-25">
+      <div class="card-body">
+        <h5 class="card-title">Jadhav Hospital / जाधव हॉस्पिटल</h5>
+        <p class="card-text">If you booked appointment form us you will get special treatment and special offers on appointments..</p>
+        <p class="card-text">जर तुम्ही आमच्या इथून मुलाखत बुक केली तर तुम्हाला खासगी उपचार व तुमच्या उपचारांवर तुम्हला सूट भेटेल ..</p>
+        <a href="{{ url_for('jadhav') }}" class="btn btn-warning">Book appointment / मुलाखत निश्चित करा </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col">
+    <div class="card">
+      <div class="bg-warning p-2 text-dark bg-opacity-25">
+      <div class="card-body">
+        <h5 class="card-title">Amrita Nursing Home / अमृता नर्सिंग होमी</h5>
+        <p class="card-text">If you booked appointment form us you will get special treatment and special offers on appointments..</p>
+        <p class="card-text">जर तुम्ही आमच्या इथून मुलाखत बुक केली तर तुम्हाला खासगी उपचार व तुमच्या उपचारांवर तुम्हला सूट भेटेल ..</p>
+        <a href="{{ url_for('amrita') }}" class="btn btn-danger">Book appointment / मुलाखत निश्चित करा </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col">
+    <div class="card">
+      <div class="bg-warning p-2 text-dark bg-opacity-25">
+      <div class="card-body">
+        <h5 class="card-title">Wagle Hospital / वागले हॉस्पिटल </h5>
+        <p class="card-text">If you booked appointment form us you will get special treatment and special offers on appointments.</p>
+        <p class="card-text">जर तुम्ही आमच्या इथून मुलाखत बुक केली तर तुम्हाला खासगी उपचार व तुमच्या उपचारांवर तुम्हला सूट भेटेल ..</p>
+        <a href="{{ url_for('wagle') }}" class="btn btn-danger">Book appointment / मुलाखत निश्चित करा </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col">
+    <div class="card">
+      <div class="bg-danger p-2 text-dark bg-opacity-25">
+      <div class="card-body">
+        <h5 class="card-title">Vairagi Hospital / वैरागी हॉस्पिटल </h5>
+        <p class="card-text">If you booked appointment form us you will get special treatment and special offers on appointments.</p>
+        <p class="card-text">जर तुम्ही आमच्या इथून मुलाखत बुक केली तर तुम्हाला खासगी उपचार व तुमच्या उपचारांवर तुम्हला सूट भेटेल ..</p>
+        <a href="{{ url_for('vairagi') }}" class="btn btn-warning">Book appointmnet / मुलाखत निश्चित करा </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="bg-dark p-2 text-dark bg-opacity-50">    
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="bg-danger p-2 text-dark bg-opacity-50">
+      <div class="card-body">
+        <h5 class="card-title">DATE :- --------- </h5>
+        <h5 class="card-title">DIABETES HEALTHCARE AND GUIDENCE CAMP / डिंबेट्स आरोग्य तपासणी व त्याचे सला. </h5>
+        <p class="card-text">Address:- K.E.S SCHOOL GROUND / पत्ता:- को.ए.सो शाळे चे मैदान .</p>
+        <a href="{{ url_for('campregistration') }}" class="btn btn-warning">Book appointment / मुलखात निश्चित करा</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="bg-danger p-2 text-dark bg-opacity-50">
+      <div class="card-body">
+        <h5 class="card-title">DATE :- --------- </h5>
+        <h5 class="card-title">HEALTHCARE AND GUIDENCE CAMP /  आरोग्य तपासणी व त्याचे सला. / Doctor:- Vairagi doctors. / सलागार:- वैरागी डॉक्टर</h5>
+        <p class="card-text">Address:- Vairagi Hospital / पत्ता:- वैरागी हॉस्पिटल.</p>
+        <a href="{{ url_for('campregistration') }}" class="btn btn-warning">Book appointment / मुलखात निश्चित करा</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="bg-dark p-2 text-dark bg-opacity-75">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="bg-warning p-2 text-dark bg-opacity-50">
+      <div class="card-body">
+        <h5 class="card-title">DATE :- --------- </h5>
+        <h5 class="card-title">GET OUT FROM YOUR STRESS/ तणाव मुक्त व्हा </h5>
+        <p class="card-text">Address:- Vairagi Hospital / पत्ता:- वैरागी हॉस्पिटल.</p>
+        <a href="{{ url_for('campregistration') }}" class="btn btn-danger">Book appointment / मुलखात निश्चित करा</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="bg-warning p-2 text-dark bg-opacity-50">
+      <div class="card-body">
+        <h5 class="card-title">DATE :- --------- </h5>
+        <h5 class="card-title">BLOOD DONATION/ रक्त दान शिबीर </h5>
+        <p class="card-text">Address : Government hospital / सरकारी दवाखाना .</p>
+        <a href="{{ url_for('campregistration') }}" class="btn btn-danger">Book appointment / मुलखात निश्चित करा</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}

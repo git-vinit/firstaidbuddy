@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	</head>
+	<body class="loggedin">
+	<div class="bg-dark p-2 text-dark bg-opacity-100">
+		<nav class="navbar navbar-expand-lg bg-info">
+			<nav class="navtop">
+				<div>
+					<h1>First Aid Buddy</h1>
+					<a href="{{ url_for('home') }}"><i class="fas fa-home"></i>Home</a>
+					<a href="{{ url_for('profile') }}"><i class="fas fa-user-circle"></i>Profile</a>
+					<a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				</div>
+			</nav>
+		  </nav>
+
+	
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
+</div>
+
+<div class="bg-dark p-2 text-dark bg-opacity-100">
+	<footer class="bg-info text-center text-white bg-opacity-50">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+		  <!-- Section: Social media -->
+		  <section class="mb-4">
+			<!-- Facebook -->
+			<a
+			  class="btn btn-primary btn-floating m-1"
+			  style="background-color: #3b5998;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-facebook-f"></i
+			></a>
+	  
+			<!-- Twitter -->
+			<a
+			  class="btn btn-primary btn-floating m-1"
+			  style="background-color: #55acee;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-twitter"></i
+			></a>
+	  
+			<!-- Google -->
+			<a
+			  class="btn btn-primary btn-floating m-1"
+			  style="background-color: #dd4b39;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-google"></i
+			></a>
+	  
+			<!-- Instagram -->
+			<a
+			  class="btn btn-primary btn-floating m-1"
+			  style="background-color: #c76666;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-instagram"></i
+			></a>
+	  
+			<!-- Linkedin -->
+			<a
+			  class="btn btn-primary btn-floating m-1"
+			  style="background-color: #0082ca;"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-linkedin-in"></i
+			></a>
+		  </section>
+		  <!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	  
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  @ FIRSTAIDBUDDY:
+		  <a class="text-white" href="http://localhost:5000/firstaidbuddy/home">firstaidbuddy.com</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>
+</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	</body>
+</html>

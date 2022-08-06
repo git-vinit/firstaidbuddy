@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block title %}From to get your details{% endblock %}
+
+{% block content %}
+
+    <div class="p-3 mb-2 bg-dark text-light">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">First Aid Buddy</h1>
+              <p class="lead">We are here to serve our coustmer with a good facility.</p>
+              <p class="lead">आम्ही तुम्हाला इथे उत्तम प्रकारची सुविधा पुरवण्यासाठीच आहोत .</p>
+            </div>
+        </div>
+    </div>
+
+    
+   
+<div class="shadow-lg p-3 mb-5 bg-body rounded">
+      <form method="POST">
+        <div class="bg-warning p-2 text-dark bg-opacity-50"> 
+        <div class="input">
+          <label>Phone number / फोने नंबर  :</label>
+          <input class="form-control" type="text" value="" name="ph" aria-label="Disabled input example" >
+        </div>
+      
+        <div class="input">
+          <label>Mail / मेल id:</label>
+          <input class="form-control" type="text" value="" name="mail"  >
+        </div>
+      
+        <div class="input">
+          <label>Name / नाव :</label>
+          <input class="form-control" type="text" value="" name="name"  >
+        </div>
+
+        <div class="input">
+          <label>Which camp you are visiting / तुम्ही कुठल्या शिबीर ला जाताय ते लिहा :</label>
+          <input class="form-control" type="text" value="" name="campname" >
+        </div>
+      
+        <div class="input">
+          <label>Age / वय  :</label>
+          <input class="form-control" type="text" value="" name="age" >
+        </div>
+        <button type="submit" class="btn btn-success mt-2">Book appointment / मुलखात निश्चित करा</button>
+        </div> 
+      </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
